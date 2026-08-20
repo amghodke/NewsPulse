@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6Q-uc-Cn3">
+                                <rect key="frame" x="46.666666666666657" y="226" width="300" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Gjg-Cl-bTQ">
+                                        <rect key="frame" x="75" y="75" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="6g6-Us-Hgo"/>
+                                            <constraint firstAttribute="width" constant="150" id="ZqU-0J-BjD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkv-C2-Tj6">
+                                        <rect key="frame" x="10" y="255" width="280" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jDx-vB-j4w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay Informed..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxM-tA-65y">
+                                        <rect key="frame" x="10" y="315" width="280" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="28a-gj-O9z"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="l6x-BF-Wu2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="28"/>
+                                        <color key="textColor" systemColor="underPageBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pxM-tA-65y" firstAttribute="leading" secondItem="qkv-C2-Tj6" secondAttribute="leading" id="5GR-Gi-oUh"/>
+                                    <constraint firstItem="qkv-C2-Tj6" firstAttribute="leading" secondItem="p6Q-uc-Cn3" secondAttribute="leading" constant="10" id="8Xu-9h-BB6"/>
+                                    <constraint firstItem="Gjg-Cl-bTQ" firstAttribute="centerY" secondItem="p6Q-uc-Cn3" secondAttribute="centerY" constant="-50" id="Erh-XV-3HT"/>
+                                    <constraint firstAttribute="trailing" secondItem="qkv-C2-Tj6" secondAttribute="trailing" constant="10" id="Luf-7s-VbB"/>
+                                    <constraint firstItem="Gjg-Cl-bTQ" firstAttribute="centerX" secondItem="p6Q-uc-Cn3" secondAttribute="centerX" id="Yit-6X-w5Y"/>
+                                    <constraint firstItem="qkv-C2-Tj6" firstAttribute="top" secondItem="Gjg-Cl-bTQ" secondAttribute="bottom" constant="30" id="cgv-K4-LeN"/>
+                                    <constraint firstAttribute="width" constant="300" id="fGV-cJ-Ade"/>
+                                    <constraint firstAttribute="height" constant="400" id="gUY-H2-fkE"/>
+                                    <constraint firstItem="pxM-tA-65y" firstAttribute="top" secondItem="qkv-C2-Tj6" secondAttribute="bottom" constant="10" id="qqZ-IQ-34c"/>
+                                    <constraint firstItem="pxM-tA-65y" firstAttribute="trailing" secondItem="qkv-C2-Tj6" secondAttribute="trailing" id="x8a-le-SUC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.047058109190000003" green="0.090209968390000006" blue="0.16076661649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="p6Q-uc-Cn3" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bsG-o5-pSo"/>
+                            <constraint firstItem="p6Q-uc-Cn3" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="k34-Za-zwx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="91.549295774647888"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_icon" width="1024" height="1024"/>
+        <systemColor name="underPageBackgroundColor">
+            <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
