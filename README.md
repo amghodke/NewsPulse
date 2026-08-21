@@ -1,5 +1,7 @@
 # NewsPulse
 
+[![iOS CI](https://github.com/amghodke/NewsPulse/actions/workflows/ios-ci.yml/badge.svg)](https://github.com/amghodke/NewsPulse/actions/workflows/ios-ci.yml)
+
 NewsPulse is a modern iOS news application built with SwiftUI, MVVM, async/await, and protocol-based dependency injection.
 
 The app fetches the latest news using the GNews API and demonstrates a clean, testable, and scalable iOS architecture suitable for a production-style portfolio project.
