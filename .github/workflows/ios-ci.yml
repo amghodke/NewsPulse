@@ -41,6 +41,6 @@ jobs:
             -project NewsPulse.xcodeproj \
             -scheme NewsPulse \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5' \
             CODE_SIGNING_ALLOWED=NO \
             test
