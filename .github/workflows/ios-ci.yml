@@ -45,3 +45,14 @@ jobs:
             -only-testing:NewsPulseTests \
             CODE_SIGNING_ALLOWED=NO \
             test
+            
+      - name: Run UI Tests
+        run: |
+          xcodebuild \
+            -project NewsPulse.xcodeproj \
+            -scheme NewsPulse \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5' \
+            -only-testing:NewsPulseUITests \
+            CODE_SIGNING_ALLOWED=NO \
+            test
