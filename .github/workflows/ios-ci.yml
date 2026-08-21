@@ -54,5 +54,6 @@ jobs:
             -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5' \
             -only-testing:NewsPulseUITests \
+            -parallel-testing-enabled NO \
             CODE_SIGNING_ALLOWED=NO \
             test
