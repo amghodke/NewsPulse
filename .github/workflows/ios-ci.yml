@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - feature/ci-setup
+
   pull_request:
     branches:
       - main
@@ -19,7 +20,7 @@ jobs:
 
       - name: Show Xcode version
         run: xcodebuild -version
-        
+
       - name: Create Secrets.xcconfig
         run: |
           echo "GNEWS_API_KEY=${{ secrets.GNEWS_API_KEY }}" > Secrets.xcconfig
@@ -33,3 +34,13 @@ jobs:
             -configuration Debug \
             CODE_SIGNING_ALLOWED=NO \
             build
+
+      - name: Run Unit Tests
+        run: |
+          xcodebuild \
+            -project NewsPulse.xcodeproj \
+            -scheme NewsPulse \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            CODE_SIGNING_ALLOWED=NO \
+            test
