@@ -1,0 +1,21 @@
+name: iOS CI
+
+on:
+  push:
+    branches:
+      - main
+      - feature/ci-setup
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
