@@ -42,5 +42,6 @@ jobs:
             -scheme NewsPulse \
             -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5' \
+            -only-testing:NewsPulseTests \
             CODE_SIGNING_ALLOWED=NO \
             test
