@@ -19,3 +19,13 @@ jobs:
 
       - name: Show Xcode version
         run: xcodebuild -version
+
+      - name: Build NewsPulse
+        run: |
+          xcodebuild \
+            -project NewsPulse.xcodeproj \
+            -scheme NewsPulse \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO \
+            build
