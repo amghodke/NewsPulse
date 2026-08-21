@@ -37,9 +37,9 @@ struct NewsPulseApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            NewsListView(
-//                viewModel: newsViewModel
-//            )
+            NewsListView(
+                viewModel: newsViewModel
+            )
         }
     }
 }
